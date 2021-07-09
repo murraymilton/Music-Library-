@@ -66,3 +66,6 @@ class LikeSong(APIView):
         serializer = SongSerializer(song)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
+    def ranking(self, request, pk):
+        pass
+
