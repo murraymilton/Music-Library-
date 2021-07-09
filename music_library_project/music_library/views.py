@@ -67,5 +67,6 @@ class LikeSong(APIView):
         return Response(serializer.data, status=status.HTTP_200_OK)
 
     def ranking(self, request, pk):
+        song = self.get_object(pk)
         pass
 
